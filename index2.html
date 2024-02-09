@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="number" id="num1" name="num1" />
+    <input type="number" id="num2" name="num2" />
+    <button type="submit" id="btn" onclick="AddValues()">Submit</button>
+    <p id="pid"> Total is: </p>
+    <script>
+        var currentResult;
+        const currentpvalue = document.getElementById('pid');
+        function AddValues() {
+
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            currentResult = parseInt(n1) + parseInt(n2);
+            currentpvalue.innerHTML = currentResult;
+
+        }
+
+
+    </script>
+</body>
+
+</html>
