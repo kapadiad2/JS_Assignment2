@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+   
+</head>
+<body>
     <script>
         // task1
         let firstName  = "Moe", lastName  = "Adam", age ="52";
         // alert(firstname + ' ' + lastname + ' ' + age);
         // task 2
-        var firstname = "Mike";
-        var lastname = "Douglas";
-        var fullname = firstname + ' ' + lastname;
+        let firstname = "Mike";
+        let lastname = "Douglas";
+        let fullname = firstname + ' ' + lastname;
         alert('Fullname is: '+ fullname);
 
 
-        //task3
+        //task3 create function addMe
         var total = 0;
-        var y = 7;
+       
         function addMe(x){
-            total = x + y;
-            alert(total);
+            total += x;
+            alert('total of ' + total + ' + ' +  x  + ' is ' + total );
 
         }
         addMe(3);
@@ -25,7 +28,7 @@
         addMe(6);
 
 
-        //task 4
+        //task 4 create function calculateCatAge
 
         function calculateCatAge(age){
             var difference = 7;
@@ -37,9 +40,6 @@
         calculateCatAge(6);
         calculateCatAge(9);
     </script>
-</head>
-<body>
-
 </body>
 
 </html>
